@@ -189,6 +189,11 @@ jobs:
           fi
           echo "KERNEL_VERSION=$(head -n 3 device_kernel/Makefile | grep -E 'VERSION|PATCHLEVEL' | awk '{print $3}' | paste -sd '.')" >> $GITHUB_ENV
 
+      - name: Make scripts executable
+        run: chmod +x scripts/gcc-version.sh
+             chmod +x scripts/clang-version.sh
+             chmod +x scripts/gcc-plugin.sh
+  
       - name: Set KSU and SUSFS for DEFCONFIG
         run: |
           cd $GITHUB_WORKSPACE/device_kernel
