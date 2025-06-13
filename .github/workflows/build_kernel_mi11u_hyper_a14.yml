@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 env:
   PYTHON_VERSION: "3" # Only 2(Ubuntu 22.04) or 3(Any OS Versions).
-  PACK_METHOD: "Anykernel3" # Anykernel3 need SOURCE and BRANCH, MKBOOTIMG needn't it.
+  PACK_METHOD: " MKBOOTIMG" # Anykernel3 need SOURCE and BRANCH, MKBOOTIMG needn't it.
   KERNELSU_METHOD: "normal" # shell, manual and only.
   HOOK_METHOD: "normal" # manual hook method,can choice syscall and normal.
   PROFILE_NAME: "zumapro_pixel_a15.env" # your profile name.
