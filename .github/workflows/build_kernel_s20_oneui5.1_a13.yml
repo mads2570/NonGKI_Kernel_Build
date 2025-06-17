@@ -57,10 +57,15 @@ jobs:
           # Move patch folder to tmp
           mv $GITHUB_WORKSPACE/Patches /tmp/
 
+
       - name: Free Disk Space (Ubuntu)
         if: env.LXC_ENABLE == 'true'
-        uses: jlumbroso/free-disk-space@main
+        uses: jlumbroso/free-disk-space@mainAdd commentMore actions
         with:
+      #- name: Free Disk Space (Ubuntu)
+        #if: env.LXC_ENABLE == 'true'
+        #uses: jlumbroso/free-disk-space@main
+        #with:
           # this might remove tools that are actually needed,
           # if set to "true" but frees about 6 GB
           tool-cache: true
