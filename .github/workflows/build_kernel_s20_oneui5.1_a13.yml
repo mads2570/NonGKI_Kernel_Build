@@ -4,8 +4,6 @@ on:
   workflow_dispatch:
 env:
   HOOK_METHOD: "normal" # manual hook method,can choice syscall and normal.
-  PATCHES_SOURCE: "simonpunk/susfs4ksu" # [your_name]/[your_patch] -> gooder123/NonGKI_Patcher
-  PATCHES_BRANCH: "1.4.2-kernel-4.19" # [your_branch] -> main
   PACK_METHOD: "MKBOOTIMG" # Anykernel3 need SOURCE and BRANCH, MKBOOTIMG needn't it.
 
 jobs:
