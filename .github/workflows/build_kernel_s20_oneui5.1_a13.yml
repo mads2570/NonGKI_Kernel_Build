@@ -325,7 +325,7 @@ jobs:
           cd $GITHUB_WORKSPACE/device_kernel
           find ./ -name Kconfig -exec dos2unix {} \;
           sed -i 's/YYLTYPE yylloc;/extern YYLTYPE yylloc;/g' scripts/dtc/dtc-lexer.l
-          sed -i 's/static union __packed gsi_channel_scratch/static union gsi_channel_scratch/g' drivers/platform/msm/gsi/gsi.c
+
           sed -i 's/CONFIG_UH=y/# CONFIG_UH is not set/g' ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
           sed -i 's/CONFIG_UH_RKP=y/# CONFIG_UH_RKP is not set/g' ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
           sed -i 's/CONFIG_KDP_CRED=y/# CONFIG_KDP_CRED is not set/g' ./arch/arm64/configs/${{ env.DEFCONFIG_NAME }}
