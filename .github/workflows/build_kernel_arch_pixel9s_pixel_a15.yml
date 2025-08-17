@@ -213,8 +213,8 @@ jobs:
       - name: Set Pack Method and KernelSU and SUSFS
         run: |
           # Variable
-          SUSFS_SOURCE=https://gitlab.com/simonpunk/susfs4ksu.git
-          SUSFS_BRANCH=gki-android14-${{ env.KERNEL_VERSION }}
+          SUSFS_SOURCE=https://github.com/SukiSU-Ultra/SukiSU-Ultra.git
+          SUSFS_BRANCH=susfs-main${{ env.KERNEL_VERSION }}
 
           # Set ${{ env.PACK_METHOD }} and KernelSU
           if [[ ${{ env.PACK_METHOD }} == "Anykernel3" ]]; then
