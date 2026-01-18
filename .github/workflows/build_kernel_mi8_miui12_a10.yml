@@ -7,12 +7,12 @@ env:
   PACK_METHOD: "Anykernel3" # Anykernel3 need SOURCE and BRANCH, MKBOOTIMG needn't it.
   KERNELSU_METHOD: "shell" # shell, manual and only.
   PATCHES_SOURCE: "author/source" # [your_name]/[your_patch] -> gooder123/NonGKI_Patcher
-  PATCHES_BRANCH: "branch" # [your_branch] -> main
-  HOOK_METHOD: "normal" # manual hook method,can choice syscall and normal.
+  PATCHES_BRANCH: "false" # [your_branch] -> main
+  HOOK_METHOD: "syscall" # manual hook method,can choice syscall and normal.
   HOOK_OLDER: "false" # contain backport older patch and syscall older patch.
   PROFILE_NAME: "dipper_miui12_a10.env" # your profile name.
   KERNELSU_SUS_PATCH: "false" # if u need manual susfs patch to kernelsu.
-  KPM_ENABLE: "false" # Only use it for SukiSU-Ultra.
+  KPM_ENABLE: "true" # Only use it for SukiSU-Ultra.
   KPM_PATCH_SOURCE: "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU_patch/refs/heads/main/kpm/patch_linux" # patch exec file source -> raw.githubusercontent.com/Test/Test/patch .
   GENERATE_DTB: "false" # if u kernel need DTB , but cannot auto generate it. (Only Anykernel3).
   GENERATE_CHIP: "qcom" # only supported for qcom and mediatek.
